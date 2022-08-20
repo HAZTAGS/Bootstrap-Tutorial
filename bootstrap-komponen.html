@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>HAZTAGS</title>
+
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <script src="bootstrap/js/bootstrap.js"></script>
+    </head>
+
+<body data-cb-spy="scroll" data-bs-target="#navbar">
+
+<!-- 1. Navbar -->
+<nav class="navbar navbar-expand-sm navbar-dark bg-success">
+    <div class="container-fluid">
+        <a class="navbar-brand">
+            <img src="assets/foto/haztags.jpg" style="width:40px;" class="rounded-pill">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_id">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar_id">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="text" placeholder="Search">
+                <button class="btn btn-primary" type="button">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<!-- 2. Carousel -->
+<div id="carousel_id" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indikator / 3 garis -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel_id" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carousel_id" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carousel_id" data-bs-slide-to="2"></button>
+    </div>
+    <!-- slideshow/carousel -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="assets/foto/haztags-baner.png" class="d-block" style="width:100%">
+            <div class="carousel-caption">
+                <h3>Haztags</h3>
+                <p>Selamat datang di channel Haztags!</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="assets/foto/beach.png" alt="Chicago" class="d-block" style="width:100%">
+            <div class="carousel-caption">
+                <h3>Pantai</h3>
+                <p>Pantai nih!</p>
+            </div> 
+        </div>
+        <div class="carousel-item">
+            <img src="assets/foto/sky.jpg" alt="New York" class="d-block" style="width:100%">
+            <div class="carousel-caption">
+                <h3>Langit</h3>
+                <p>Langit bisakah kau turunkan?</p>
+            </div>  
+        </div>
+    </div>
+    <!-- icon control kanan dan kiri -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+<!-- 3. Modal -->
+<!-- Button buat buka pop up modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal_id">Open modal</button>
+<!-- Ini Modal -->
+<div class="modal fade" id="modal_id">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Modal Heading</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                Hallo...!
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 4. ScrollSpy -->
+<div id="home" class="container-fluid bg-success text-white" style="padding:100px 20px;">
+    <h1>Home</h1>
+    <p>Klik link pada navbar untuk melihat efek scroll !</p>
+    <p>Klik link pada navbar untuk melihat efek scroll !</p>
+</div>
+
+<div id="about" class="container-fluid bg-warning" style="padding:100px 20px;">
+    <h1>About</h1>
+    <p>Klik link pada navbar untuk melihat efek scroll !</p>
+    <p>Klik link pada navbar untuk melihat efek scroll !</p>
+</div>
+
+<div id="contact" class="container-fluid bg-secondary text-white" style="padding:100px 20px;">
+    <h1>Contact</h1>
+    <p>Klik link pada navbar untuk melihat efek scroll !</p>
+    <p>Klik link pada navbar untuk melihat efek scroll !</p>
+</div>
+
+<div class="container-fluid bg-dark text-white" style="padding:60px 20px;">
+    <center><h3>Footer</h3></center>
+</div>
+
+</body>
+</html>
